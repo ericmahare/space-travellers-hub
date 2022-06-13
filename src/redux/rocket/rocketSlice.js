@@ -1,4 +1,5 @@
 const ADD_ROCKET = 'space-travellers-hub/redux/rocket/ADD_TICKET';
+const RESERVE_ROCKET = 'space-travellers-hub/redux/rocket/RESERVE_TICKET';
 
 const initialState = [];
 const url = 'https://api.spacexdata.com/v3/rockets';
@@ -9,6 +10,13 @@ export const addRocket = (rockets) => ({
   type: ADD_ROCKET,
   rockets,
 });
+
+// Reserve rocket
+export const reserveRocket = (rocketId) => ({
+  type: RESERVE_ROCKET,
+  rocketId,
+});
+
 
 export const FetchRockets = () => (async (dispatch) => {
   const response = await fetch(url);
@@ -28,10 +36,23 @@ export const FetchRockets = () => (async (dispatch) => {
 });
 
 const reducer = (state = initialState, action) => {
-  if(action.type === ADD_ROCKET) {
+  switch(action.type) {
+    case ADD_ROCKET:
       return [...action.rockets];
+    case RESERVE_ROCKET: {
+      const newState = state.map((rocket) => {
+        if (rocket.rocket_id !== action.rocketId) {
+          return rocket;
+        }
+
+        return { ...rocket, reserved: true };
+      });
+
+      return newState;
+    }
+    default:
+      return state;
   }
-    return state;
 };
 
 export default reducer;
