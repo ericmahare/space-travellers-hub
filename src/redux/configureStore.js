@@ -2,7 +2,6 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 import rocketsReducer from './rocket/rocketSlice';
-// import dragonReducer from './dragon/dragon';
 
 const reducer = combineReducers({
   rocketsReducer
