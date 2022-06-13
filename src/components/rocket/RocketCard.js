@@ -1,14 +1,20 @@
 import React from 'react';
 import '../../scss/RocketCard.scss'
 import { useDispatch } from 'react-redux'
-import { reserveRocket } from '../../redux/rocket/rocketSlice';
+import { reserveRocket, cancelReserve  } from '../../redux/rocket/rocketSlice';
 
 function RocketCard({ rocket }) {
   const {rocket_id, rocket_description, rocket_name, rocket_img, reserved}  = rocket
 
   const dispatch = useDispatch();
+  // rocket booking
   const rocketBooking = (id) => {
     dispatch(reserveRocket(id));
+  };
+
+  // rocket cancelation
+  const cancelBooking = (id) => {
+    dispatch(cancelReserve(id));
   };
 
   return(
@@ -24,6 +30,16 @@ function RocketCard({ rocket }) {
             {reserved ? (<span className='mini-btn'>Reserved</span>) : (false)}
             {rocket_description}
           </p>
+
+          {rocket.reserved ? (
+            <button 
+              onClick={() => cancelBooking(rocket_id)}
+              type='button'
+              className='cancel-reserve'
+            >
+              Cancel Reservation
+            </button>
+          ) : (
             <button 
               onClick={() => rocketBooking(rocket_id)}
               type='button'
@@ -31,6 +47,7 @@ function RocketCard({ rocket }) {
           >
             Reserve Rocket
           </button>
+          )}
         </div>
 
       </div>
