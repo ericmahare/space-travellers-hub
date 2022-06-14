@@ -18,9 +18,9 @@ function MissionCard({ mission }) {
         <td className='missionName'>Thaicom</td>
         <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus vel tortor non volutpat. Proin at nisl dictum, fermentum enim id, porttitor nisl. Aenean euismod nulla ac nibh dictum hendrerit. Pellentesque ultrices nisl sit amet libero consectetur, vitae facilisis turpis varius. Praesent ac efficitur augue.</td>
         <td className='status'>
-        <p className=''> NOT A MEMBER </p>
+        <p className={styles.notReserved}> NOT A MEMBER </p>
         </td>
-        <td className='status'>
+        <td className={styles.join}>
         <button> Join Mission </button>
         </td>
     </tr>
@@ -29,10 +29,10 @@ function MissionCard({ mission }) {
         <td className='missionName'>Iridium NEXT</td>
         <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus vel tortor non volutpat. Proin at nisl dictum, fermentum enim id, porttitor nisl. Aenean euismod nulla ac nibh dictum hendrerit. Pellentesque ultrices nisl sit amet libero consectetur, vitae facilisis turpis varius. Praesent ac efficitur augue.</td>
         <td className='status'>
-        <p className=''> ACTIVE MEMBER </p>
+        <p className={styles.missionReserved}> ACTIVE MEMBER </p>
         </td>
-        <td className='status'>
-        <button> Leave Mission </button>
+        <td className=''>
+        <button className={styles.leave}> Leave Mission </button>
         </td>
     </tr>
     </tbody>
