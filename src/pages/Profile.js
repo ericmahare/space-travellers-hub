@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Profile from '../components/profile/profile';
+import '../scss/Profile.scss';
 
-const Profile = () => {
-  return (
-    <div>Profile</div>
-  )
+function MyProfile() {
+    return (
+      <div className="Profile">
+        <Profile />
+      </div>
+    );
 }
-
-export default Profile
+  
+export default MyProfile;
