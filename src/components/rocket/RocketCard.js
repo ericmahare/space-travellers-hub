@@ -15,7 +15,6 @@ function RocketCard({ rocket }) {
             {rocket_description}
           </p>
             <button 
-              onClick={() => rocketBooking(rocket_id)}
               type='button'
               className='rocket-btn'
           >
