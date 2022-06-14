@@ -3,7 +3,6 @@ import MissionCard from './MissionCard'
 import '../../scss/MissionTable.scss';
 
 const MissionTable = () => {
-  
   return (
     <div className='rocketList'>
       <MissionCard />
