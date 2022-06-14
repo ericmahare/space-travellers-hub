@@ -1,5 +1,6 @@
 const ADD_ROCKET = 'space-travellers-hub/redux/rocket/ADD_TICKET';
 const RESERVE_ROCKET = 'space-travellers-hub/redux/rocket/RESERVE_TICKET';
+const CANCEL_RESERVATION = 'space-travellers-hub/redux/rocket/CANCEL_RESERVATION';
 
 const initialState = [];
 const url = 'https://api.spacexdata.com/v3/rockets';
@@ -17,6 +18,11 @@ export const reserveRocket = (rocketId) => ({
   rocketId,
 });
 
+// cancel reservation
+export const cancelReserve = (rocketId) => ({
+  type: CANCEL_RESERVATION,
+  rocketId,
+});
 
 export const FetchRockets = () => (async (dispatch) => {
   const response = await fetch(url);
@@ -46,6 +52,17 @@ const reducer = (state = initialState, action) => {
         }
 
         return { ...rocket, reserved: true };
+      });
+
+      return newState;
+    }
+    case CANCEL_RESERVATION: {
+      const newState = state.map((rocket) => {
+        if (rocket.rocket_id !== action.rocketId) {
+          return rocket;
+        }
+
+        return { ...rocket, reserved: false };
       });
 
       return newState;
