@@ -4,8 +4,7 @@ import { useDispatch } from 'react-redux'
 import { reserveRocket, cancelReserve  } from '../../redux/rocket/rocketSlice';
 
 function RocketCard({ rocket }) {
-  const {rocket_id, rocket_description, rocket_name, rocket_img, reserved}  = rocket
-
+  const { rocket_id, rocket_description, rocket_name, rocket_img, reserved}  = rocket
   const dispatch = useDispatch();
   // rocket booking
   const rocketBooking = (id) => {
