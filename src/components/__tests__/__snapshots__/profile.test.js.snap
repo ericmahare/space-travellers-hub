@@ -7,8 +7,10 @@ exports[`test profile component render profile correctly 1`] = `
   <div
     className="box"
   >
-    <h2>
-      My Reserved Rockets
+    <h2
+      className="title"
+    >
+      My Missions
     </h2>
     <table
       className="Mission-ProfileTable"
@@ -16,9 +18,6 @@ exports[`test profile component render profile correctly 1`] = `
       <tbody />
     </table>
   </div>
-  <div
-    className="box"
-  >
   <div>
     <div
       className="box"
