@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mission component test renders correctly 1`] = `
+<div
+  className="rocketList"
+>
+  <table
+    className="missionCard"
+  >
+    <tbody>
+      <tr>
+        <th>
+          Mission
+        </th>
+        <th>
+          Description
+        </th>
+        <th>
+          Status
+        </th>
+        <th>
+           
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
