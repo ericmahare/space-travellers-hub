@@ -2,7 +2,7 @@
 
 > [Live Demo](https://space-travellers-app-hub.netlify.app/)
 
-## video Demo
+## Video Demo
 
 > [Video Demo](https://drive.google.com/file/d/1M_Vd6bGCrfJu3IzBGFTtwJeqVHlkD1Us/view?usp=sharing)
 
