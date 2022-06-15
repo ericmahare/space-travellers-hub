@@ -1,7 +1,7 @@
 import renderer from 'react-test-renderer';
-import RocketCard from '../rocket/RocketCard';
+import RocketCard from '../RocketCard';
 import { Provider } from 'react-redux';
-import store from '../../redux/configureStore'
+import store from '../../../redux/configureStore'
 
 it('renders correctly', () => {
   const rocket = {

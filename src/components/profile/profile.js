@@ -23,7 +23,9 @@ const Profile = () => {
           </tbody>
         </table>
       </div>
-      <RocketsReserved />
+      <div>
+        <RocketsReserved />
+      </div>
     </div>
   );
 };

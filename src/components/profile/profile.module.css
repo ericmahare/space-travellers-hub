@@ -11,7 +11,14 @@
   font-weight: normal;
 }
 
-.profile .title-entry {
+.profile {
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.title-entry {
   border: 1px solid #e8e8e8;
   padding: 25px 35px;
   font-size: 1.3rem;

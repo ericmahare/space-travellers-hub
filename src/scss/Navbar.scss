@@ -10,6 +10,7 @@ header {
 }
 
 .navbar {
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -22,4 +23,10 @@ header {
 .navMenu {
   margin-right: 80px;
   gap: 20px;
+}
+
+.navMenu a {
+  text-decoration:none;
+  color:#111;
+  cursor: pointer;
 }
