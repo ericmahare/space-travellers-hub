@@ -26,7 +26,15 @@ header {
 }
 
 .navMenu a {
-  text-decoration:none;
-  color:#111;
   cursor: pointer;
+}
+
+.active {
+  color: #002fff;
+  text-decoration:underline;
+}
+
+.link {
+  color:#111;
+  text-decoration: none;
 }
