@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section>
+  <div
+    className="rocketCard d-flex"
+  >
+    <div
+      className="rocketImage"
+    >
+      <img
+        alt="Falcon 1"
+        className="rocketImage"
+        src="https://imgur.com/DaCfMsj.jpg"
+      />
+    </div>
+    <div
+      className="rocketInfo d-flex"
+    >
+      <span
+        className="rocketTitle"
+      >
+        Falcon 1
+      </span>
+      <p
+        className="rocketDetail"
+      />
+      <button
+        className="rocket-btn"
+        onClick={[Function]}
+        type="button"
+      >
+        Reserve Rocket
+      </button>
+    </div>
+  </div>
+</section>
+`;
