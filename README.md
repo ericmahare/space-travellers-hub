@@ -2,7 +2,7 @@
 
 > [Live Demo](https://space-travellers-app-hub.netlify.app/)
 
-## vide Demo
+## video Demo
 
 > [Video Demo](https://drive.google.com/file/d/1M_Vd6bGCrfJu3IzBGFTtwJeqVHlkD1Us/view?usp=sharing)
 
@@ -60,9 +60,9 @@ To get a local copy up and running follow these simple example steps.
 - In case you run into any errors please raise an [issue](https://github.com/ericmahare/space-travellers-hub/issues).
 ## Jest testing
 For testing using jest follow these steps:
-- npm install
-  > `This will download all the dependencies`
-- npm test 
+  > npm install
+  `This will download all the dependencies`
+  > npm test 
   `This will perform all the tests and display the result on the terminal`
 
 ## Linter errors testing
