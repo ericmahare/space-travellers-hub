@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import store from '../../redux/configureStore'
 import Missions from '../mission/missionTable';
 
+
 const StoreProvider = () => (
   <Provider store={store}>
     <Missions />
