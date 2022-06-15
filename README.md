@@ -62,6 +62,7 @@ To get a local copy up and running follow these simple example steps.
 For testing using jest follow these steps:
   > npm install
   `This will download all the dependencies`
+ - Get all test results
   > npm test 
   `This will perform all the tests and display the result on the terminal`
 
