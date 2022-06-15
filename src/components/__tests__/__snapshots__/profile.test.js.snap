@@ -19,30 +19,19 @@ exports[`test profile component render profile correctly 1`] = `
   <div
     className="box"
   >
-    <h2
-      className="title"
+  <div>
+    <div
+      className="box"
     >
-      My Missions
-    </h2>
-    <table
-      className="Mission-ProfileTable"
-    >
-      <tbody />
-    </table>
-  </div>
-  <div
-    className="box"
-  >
-    <h2
-      className="title"
-    >
-      My Dragons
-    </h2>
-    <table
-      className="Mission-ProfileTable"
-    >
-      <tbody />
-    </table>
+      <h2>
+        My Rockets
+      </h2>
+      <table
+        className="Mission-ProfileTable"
+      >
+        <tbody />
+      </table>
+    </div>
   </div>
 </div>
 `;
