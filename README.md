@@ -58,8 +58,14 @@ To get a local copy up and running follow these simple example steps.
 - On your terminal run : `npm i`
 - To start the development server : `npm run start`
 - In case you run into any errors please raise an [issue](https://github.com/ericmahare/space-travellers-hub/issues).
-## Test
+## Jest testing
+For testing using jest follow these steps:
+- npm install
+  > `This will download all the dependencies`
+- npm test 
+  `This will perform all the tests and display the result on the terminal`
 
+## Linter errors testing
 For tracking linter errors locally you need to follow these steps:
 
 - After cloning the project you need to run this command
@@ -75,7 +81,7 @@ For tracking linter errors locally you need to follow these steps:
 
 ## Authors
 
-👥 **ADISA Hammed**
+👥 **Adisa Hammed**
 
 - GitHub: [@AbuRayhaan](https://github.com/AbuRayhaan)
 - Twitter: [@ayinla2011](https://twitter.com/Ayinla2011)
@@ -107,4 +113,5 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](https://github.com/ericmahare/space-travellers-hub/blob/development/LICENSE) licensed.                                                                                                                                                
+This project is [MIT](https://github.com/ericmahare/space-travellers-hub/blob/development/LICENSE) licensed.
+                                                                                                                                 
